@@ -43,9 +43,26 @@ streamlit run app.py
 
 ## ⚙️ Project Structure
 ```text
-├── app.py                # Application entry point & routing
-├── database.py           # Secure database middleware
-├── auth.py               # Authentication controller
-├── models/               # Business logic & User/Pet classes
-└── pages/                # Modular UI components
+├── app.py                # Main Entry Point & Routing
+├── auth.py               # Authentication Controller (Login/Signup/OTP)
+├── database.py           # Secure Database Layer (Supabase + RLS Logic)
+├── config.py             # Global Constants & Asset Pathing
+├── email_utils.py        # SMTP / Gmail Notification Engine
+├── badges.py             # Badge Definitions & Achievement Logic
+├── tasks.py              # Points Mapping & Task Catalog
+├── requirements.txt      # Dependency Manifest
+├── assets/
+│   ├── logo.png          # App Branding
+│   └── pets/             # Pet State Lottie Animations (JSON)
+├── models/
+│   ├── analytics.py      # Data Visualization & Chart Logic
+│   ├── pet.py            # Pet State & Leveling Logic
+│   └── user.py           # User Profile & Activity Logic
+└── pages/
+    ├── home.py           # Main Dashboard & Pet Interaction
+    ├── stats.py          # Productivity Metrics & Charts
+    ├── task_logger.py    # Task Submission Interface
+    ├── achievements.py   # Badge Gallery & Earned Milestones
+    ├── logbook.py        # Historical Activity Log
+    └── profile.py        # Account Settings & Security
 ```
