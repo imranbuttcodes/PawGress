@@ -1,0 +1,12 @@
+streamlit>=1.35.0
+supabase
+python-dotenv
+plotly
+fpdf2
+Pillow
+streamlit-lottie
+calplot
+pytz
+requests
+pandas
+matplotlib
